@@ -163,6 +163,8 @@ h2 {
     margin-top: 10px;
 }
 
+/* Janela modal */
+
 .pizzaWindowArea {
     position: fixed;
     left: 0;
@@ -223,42 +225,42 @@ h2 {
 }
 
 .pizzaInfo--sector {
-    color: #ccc;
+    color: #CCC;
     text-transform: uppercase;
     font-size: 14px;
-    margin-bottom: 30px;
+    margin-top: 30px;
     margin-bottom: 10px;
 }
 
-.pizzaInfo-sizes {
+.pizzaInfo--sizes {
     display: inline-flex;
     border-radius: 10px;
     overflow: hidden;
 }
 
-.pizzaInfo-size {
+.pizzaInfo--size {
     padding: 10px 15px;
     color: #000;
-    background-color: #eee;
+    background-color: #EEE;
     font-size: 13px;
     font-weight: bold;
     cursor: pointer;
 }
 
-.pizzaInfo-size:hover {
-    background-color: #ccc;
+.pizzaInfo--size:hover {
+    background-color: #CCC;
 }
 
 .pizzaInfo--size.selected {
     background-color: #d32f2f;
-    color: #fff;
+    color: #FFF;
 }
 
 .pizzaInfo--size.selected span {
-    color: #d6d6d6;
+    color: #D6D6D6;
 }
 
-.pizzaInfo-size span {
+.pizzaInfo--size span {
     font-size: 12px;
     color: #999;
     font-weight: normal;
@@ -276,9 +278,17 @@ h2 {
 
 .pizzaInfo--qtarea {
     display: inline-flex;
-    background-color: #eee;
+    background-color: #EEE;
     border-radius: 10px;
     height: 30px;
+}
+
+.pizzaInfo--qt {
+    line-height: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0px 5px;
+    color: #000;
 }
 
 .pizzaInfo--qtarea button {
