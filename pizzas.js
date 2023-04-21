@@ -24,8 +24,11 @@ let pizzaJson = [
             '530g', '860g'], description: 'Molho de tomate, mussarela, carne de sol, tomates em cubo, coentro, cebola, azeitona, catupiry e orégano'
     },
     {
-        id: 7, name: 'Banana com canela', img: 'img/Banana-com-canela.png', price: 36.00, sizes: ['320g',
+        id: 7, name: 'Banana com canela', img: 'img/Banana-com-canela.png', price: 32.00, sizes: ['320g',
             '530g', '860g'], description: 'Mussarela, banana, canela e açúcar'
+    },
+    {
+        id: 8, name: 'Chocolate com morango', img: 'img/Chocolate-com-morango.png', price: 40.00, sizes: ['320g',
+            '530g', '860g'], description: 'Creme de leite, lascas de chocolate e morangos'
     }
-
-]
+];
