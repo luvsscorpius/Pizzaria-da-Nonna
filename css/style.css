@@ -1,13 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Hepta+Slab:400,700|Lato:400,700&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    background-color: #eee;
+    background-color: #EEE;
     font-family: 'Lato', Helvetica, Arial;
     font-size: 15px;
     display: flex;
@@ -15,15 +13,9 @@ body {
     min-height: 100vh;
 }
 
-/* Models */
-
 .models {
     display: none;
-    /* esconde o modelo */
-
 }
-
-/* Header */
 
 header {
     position: fixed;
@@ -42,12 +34,11 @@ header h1 {
     color: #fff;
 }
 
-/* Menu openner */
-
 .menu-openner {
     margin-right: 15px;
     font-size: 26px;
     padding: 5px 20px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
@@ -62,8 +53,6 @@ header h1 {
     font-size: 30px;
 }
 
-/* Aside */
-
 aside {
     background-color: #ffcdd2;
     width: 0vw;
@@ -77,10 +66,14 @@ aside.show {
 }
 
 .cart--area {
+    margin-top: 30px;
+    /* ajuste */
     padding: 20px;
 }
 
-/* main */
+.cart--area h1 {
+    display: relative;
+}
 
 main {
     flex: 1;
@@ -116,9 +109,9 @@ h2 {
 .pizza-item--img {
     width: 200px;
     height: 200px;
-    background-color: #eee;
+    background-color: #EEE;
     border-radius: 100px;
-    box-shadow: 0px 10px 50px rgba(0, 0, 0.2);
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.2);
 }
 
 .pizza-item--img img {
@@ -133,7 +126,7 @@ h2 {
     border-radius: 25px;
     background-color: #d32f2f;
     text-align: center;
-    color: #fff;
+    color: #FFF;
     font-size: 22px;
     cursor: pointer;
     margin-top: -25px;
@@ -163,8 +156,6 @@ h2 {
     margin-top: 10px;
 }
 
-/* Janela modal */
-
 .pizzaWindowArea {
     position: fixed;
     left: 0;
@@ -181,7 +172,7 @@ h2 {
 
 .pizzaWindowBody {
     width: 900px;
-    background-color: #fff;
+    background-color: #FFF;
     border-radius: 10px;
     box-shadow: 0px 0px 15px #999;
     display: flex;
@@ -283,14 +274,6 @@ h2 {
     height: 30px;
 }
 
-.pizzaInfo--qt {
-    line-height: 30px;
-    font-size: 12px;
-    font-weight: bold;
-    padding: 0px 5px;
-    color: #000;
-}
-
 .pizzaInfo--qtarea button {
     border: 0;
     background-color: transparent;
@@ -301,12 +284,20 @@ h2 {
     color: #333;
 }
 
+.pizzaInfo--qt {
+    line-height: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0px 5px;
+    color: #000;
+}
+
 .pizzaInfo--addButton {
     margin-top: 30px;
     padding: 20px 30px;
     border-radius: 20px;
     background-color: #48d05f;
-    color: #fff;
+    color: #FFF;
     display: inline-block;
     cursor: pointer;
     margin-right: 30px;
@@ -351,7 +342,7 @@ h2 {
 
 .cart--item--qtarea {
     display: inline-flex;
-    background-color: #eee;
+    background-color: #EEE;
     border-radius: 10px;
     height: 30px;
 }
@@ -397,7 +388,7 @@ h2 {
     padding: 20px 30px;
     border-radius: 20px;
     background-color: #48d05f;
-    color: #fff;
+    color: #FFF;
     cursor: pointer;
     text-align: center;
     margin-top: 20px;
@@ -407,4 +398,108 @@ h2 {
 
 .cart--finalizar:hover {
     background-color: #35af4a;
+}
+
+@media (max-width:1000px) {
+    .pizza-area {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:840px) {
+    body {
+        flex-direction: column;
+    }
+
+    .pizza-area {
+        display: block;
+    }
+
+    .pizza-item {
+        max-width: 100%;
+    }
+
+    header {
+        display: flex;
+    }
+
+    /*
+    main {
+        padding-top:60px;
+    }
+    */
+    aside {
+        width: auto;
+        position: fixed;
+        left: 100vw;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        transition: all ease .2s;
+    }
+
+    aside.show {
+        width: auto;
+    }
+
+    .cart--area {
+        width: 100vw;
+    }
+
+    .menu-closer {
+        display: block;
+    }
+
+    .pizzaWindowArea {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .pizzaWindowBody {
+        width: 100vw;
+        display: block;
+        padding: 20px;
+        border-radius: 0;
+        box-shadow: none;
+        margin: 0;
+    }
+
+    .pizzaBig img {
+        width: 75%;
+        height: auto;
+    }
+
+    .pizzaInfo h1 {
+        margin-top: 20px;
+    }
+
+    .pizzaInfo--qtarea {
+        height: 60px;
+    }
+
+    .pizzaInfo--qtarea button {
+        font-size: 25px;
+        padding: 0px 25px;
+    }
+
+    .pizzaInfo--qt {
+        line-height: 60px;
+        font-size: 20px;
+    }
+
+    .pizzaInfo--addButton {
+        font-size: 20px;
+        display: block;
+        text-align: center;
+        margin: 30px auto;
+    }
+
+    .pizzaInfo--cancelButton {
+        display: none;
+    }
+
+    .pizzaInfo--cancelMobileButton {
+        display: block;
+    }
+
 }
