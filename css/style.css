@@ -13,6 +13,27 @@ body {
     min-height: 100vh;
 }
 
+ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    padding-left: 800px;
+}
+
+ul li {
+    margin: 10px;
+}
+
+ul li:hover {
+    opacity: 0.85;
+}
+
+a {
+    text-decoration: none;
+    color: #eee;
+}
+
 .models {
     display: none;
 }

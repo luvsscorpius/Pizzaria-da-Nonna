@@ -30,5 +30,24 @@ let pizzaJson = [
     {
         id: 8, name: 'Chocolate com morango', img: 'img/Chocolate-com-morango.png', price: [37.00, 41.00, 49.00], sizes: ['6 fatias',
             '8 fatias', '12 fatias'], description: 'Creme de leite, lascas de chocolate e morangos'
+    },
+    {
+        id: 9, name: 'Frango com catupiry', img: 'img/frango-com-catupiry.png', price: [25.00, 30.00, 34.99], sizes: ['6 fatias',
+            '8 fatias', '12 fatias'], description: 'Peito de frango desfiado e catupiry'
+    },
+    {
+        id: 10, name: 'Queijo', img: 'img/queijo.png', price: [20.00, 23.00, 30.00], sizes: ['6 fatias', '8 fatias', '12 fatias'], description: 'Molho de tomate, queijo e alho'
+    },
+    {
+        id: 11, name: 'Margherita', img: 'img/margerita.png', price: [25.00, 30.00, 40.00], sizes: ['6 fatias', '8 fatias', '12 fatias'],
+        description: 'Mussarela, azeite, manjericão e molho de tomate'
+    },
+    {
+        id: 12, name: 'Bacon', img: 'img/pizza-bacon.png', price: [30.00, 40.00, 50.00], sizes: ['6 fatias', '8 fatias', '12 fatias'],
+        description: 'Molho de tomate, bacon fatiado, mussarela, fatias de tomate e orégano'
+    },
+    {
+        id: 12, name: 'Salame', img: 'img/salame.png', price: [40.00, 45.00, 60.00], sizes: ['6 fatias', '8 fatias', '12 fatias'],
+        description: 'Molho de tomate, salame fatiado e catupiry'
     }
 ];
